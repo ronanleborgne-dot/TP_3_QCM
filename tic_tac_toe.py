@@ -23,3 +23,9 @@ class TicTacToe():
             return True
         return False
     
+    def is_draw(self):
+        return np.all(self.board != 0) and not self.check_winner()
+    
+    
+
+    
